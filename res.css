@@ -1,0 +1,104 @@
+@media (max-width: 900px) {
+    nav .menu ul {
+        display: none;
+    }
+
+    .container {
+        display: grid;
+        margin: 0 auto;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 8px;
+    }
+    .container .left{
+        grid-row-start: end;
+    }
+    .container .right img{
+        display: flex;
+        margin: 0 auto;
+    }
+    .container_card .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container_card .card .cards{
+        max-width: 100%;
+    }
+    .section {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+    .class_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .class_image {
+        min-height: 500px;
+    }
+    .section_container .content_header {
+        text-align: left;
+        max-width: 400px;
+    }
+    .pricing .pricing_card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer  .row{
+        display: grid;
+        grid-template-columns: 1fr 200px;
+    }
+    .footer  .footer-col p{
+        max-width: 630px;
+        grid-template-columns: 1fr 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container_card .header{
+        flex-direction: column;
+    }
+    .container_card .header .icon{
+        justify-content: center;
+    }
+    .container_card .card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section .div1 .img_1 {
+        max-width: 500px;
+        position: absolute;
+        margin: 0 auto;
+        height: 333px;
+        border-radius: 10px;
+        left: 0;
+    }
+    .section .div2 p {
+        font-size: 16px;
+        line-height: 1.4rem;
+        margin-top: 1.5rem;
+        word-spacing: 2px;
+        color: #d1d5db;
+        margin-bottom: 4rem;
+    }
+    .pricing .pricing_card .cards {
+        max-width: 100%;
+    }
+    .pricing .pricing_card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .section_container .join_card {
+        margin: 0 0rem;
+        margin-bottom: -18rem;
+    }
+    .review_container .review {
+        display: flex;
+        flex-direction: column;
+    }
+    .review_container .review .content .review_footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        align-items: center;
+    }
+    .footer  .row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
